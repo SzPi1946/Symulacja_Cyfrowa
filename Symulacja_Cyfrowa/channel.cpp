@@ -1,18 +1,38 @@
 #include "channel.h"
+#include "logger.h"
+#include <iostream>
 
-channel::channel()
+Channel::Channel(Logger* logger)
+{
+  log_ = logger;
+  log_->Info("The channel has been created");
+}
+
+Channel::~Channel()
+{
+  log_->Info("The channel has been removed");
+}
+
+
+void Channel::CheckError()
 {
 }
 
-channel::~channel()
+void Channel::CSMA_CA()
 {
 }
 
-
-void channel::CheckError()
+bool Channel::return_free()
 {
+  return free_;
 }
 
-void channel::CSMA_CA()
+bool Channel::return_collision()
 {
+  return collision_;
+}
+
+void Channel::Set_Status(bool status)
+{
+  free_ = status;
 }

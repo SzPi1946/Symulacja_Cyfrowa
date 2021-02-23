@@ -1,21 +1,23 @@
 #include "BroadcastStation.h"
+#include "WirelessNetwork.h"
+#include <iostream>
+#include "logger.h"
+#include <queue>
+#include "Packet.h"
 
-
-BroadcastStation::BroadcastStation()
+BroadcastStation::BroadcastStation(int StationNumber, Logger* logger)
 {
-	StationNumber_ = 0;
-	block = false;
+	log_ = logger;
+	StationNumber_ = StationNumber;
+	log_->Info("The Broadcast Station " + std::to_string(StationNumber_) + " has been created.");
 }
 
 BroadcastStation::~BroadcastStation()
 {
+	log_->Info("The Broadcast Station " + std::to_string(StationNumber_) + " has been removed.");
 }
 
-Packet BroadcastStation::GeneratePacket()
-{
-	Packet p =  Packet(); //new packet create and return this new packet
-return p;
-}
+
 
 void BroadcastStation::RetransmissionTime()
 {
@@ -32,10 +34,10 @@ void BroadcastStation::TransmissionTime()
 	
 }
 
-void BroadcastStation::AddToQueue(Packet packet)
-{
-
-}
+//void BroadcastStation::AddToQueue(Packet* packet)
+//{
+	
+//}
 
 void BroadcastStation::Wait()
 {
@@ -45,4 +47,9 @@ void BroadcastStation::Wait()
 void BroadcastStation::WaitCGP()
 {
 
+}
+
+int BroadcastStation::return_StationNumber()
+{
+	return StationNumber_;
 }

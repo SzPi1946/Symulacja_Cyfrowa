@@ -1,0 +1,18 @@
+[Info] The channel has been created
+[Info] The network has been created.
+[Info] The Broadcast Station 1 has been created.
+[Info] The Receiving Station 1 has been created.
+[Info] The Broadcast Station 2 has been created.
+[Info] The Receiving Station 2 has been created.
+[Info] The Broadcast Station 3 has been created.
+[Info] The Receiving Station 3 has been created.
+[Info] The Broadcast Station 4 has been created.
+[Info] The Receiving Station 4 has been created.
+[Info] The Broadcast Station 5 has been created.
+[Info] The Receiving Station 5 has been created.
+[Info] The Broadcast Station 6 has been created.
+[Info] The Receiving Station 6 has been created.
+[Info] The Broadcast Station 7 has been created.
+[Info] The Receiving Station 7 has been created.
+[Info] The Broadcast Station 8 has been created.
+[Info] The Receiving Station 8 has been created.
