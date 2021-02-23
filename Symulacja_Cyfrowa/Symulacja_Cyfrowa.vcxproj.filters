@@ -18,36 +18,48 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="WirelessNetwork.cpp">
+    <ClCompile Include="wirelessnetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="channel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Packet.cpp">
+    <ClCompile Include="broadcaststation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BroadcastStation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ReceivingStation.cpp">
+    <ClCompile Include="generator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="WirelessNetwork.h">
+    <ClInclude Include="wirelessnetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="channel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Packet.h">
+    <ClInclude Include="broadcaststation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BroadcastStation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ReceivingStation.h">
+    <ClInclude Include="generator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

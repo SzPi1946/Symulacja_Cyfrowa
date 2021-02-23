@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{25822DAE-DF03-4EE6-8B7C-146FFFCA9C8F}</ProjectGuid>
+    <ProjectGuid>{84337078-5EAD-4BB3-A7D5-CB61A829DA90}</ProjectGuid>
     <RootNamespace>SymulacjaCyfrowa</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -138,19 +138,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BroadcastStation.cpp" />
     <ClCompile Include="channel.cpp" />
+    <ClCompile Include="generator.cpp" />
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Packet.cpp" />
-    <ClCompile Include="ReceivingStation.cpp" />
-    <ClCompile Include="WirelessNetwork.cpp" />
+    <ClCompile Include="packet.cpp" />
+    <ClCompile Include="simulation.cpp" />
+    <ClCompile Include="broadcaststation.cpp" />
+    <ClCompile Include="wirelessnetwork.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BroadcastStation.h" />
     <ClInclude Include="channel.h" />
-    <ClInclude Include="Packet.h" />
-    <ClInclude Include="ReceivingStation.h" />
-    <ClInclude Include="WirelessNetwork.h" />
+    <ClInclude Include="generator.h" />
+    <ClInclude Include="logger.h" />
+    <ClInclude Include="packet.h" />
+    <ClInclude Include="simulation.h" />
+    <ClInclude Include="broadcaststation.h" />
+    <ClInclude Include="wirelessnetwork.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

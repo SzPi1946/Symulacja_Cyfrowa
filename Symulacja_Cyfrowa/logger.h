@@ -2,7 +2,6 @@
 #define LOGGER_H_
 #include <string>
 #include <fstream>
-#include <iostream>
 
 class Logger
 {
@@ -11,7 +10,7 @@ public:
 	Logger();
 	~Logger();
 
-	void set_level(Level level);
+	void set_level();
 	void Info(std::string message);
 	void Debug(std::string message);
 	void Error(std::string message);
@@ -19,9 +18,7 @@ public:
 private:
 	std::string file_path_;
 	std::ofstream txt_file_;
-	Level level_ = Level::Info; // level Info: Info Error, Debug:Info,Debug Error, Error: Error
-
+	Level level_;
 };
-
-#endif LOGGER_H_
+#endif
 
